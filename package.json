@@ -1,8 +1,10 @@
 {
   "name": "redux-todo-list",
   "version": "0.1.0",
+  "homepage": "https://gentamura.github.io/redux-todo-list",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
@@ -11,10 +13,11 @@
     "redux": "^3.7.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "homepage": "https://gentamura.com/apps/redux-todo-list/build"
+  }
 }
